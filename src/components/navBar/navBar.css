@@ -1,0 +1,38 @@
+.nav {
+    background: rgb(125,255,251);
+background: linear-gradient(90deg, rgba(125,255,251,1) 27%, rgba(24,234,227,1) 68%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 5rem;
+    align-items: center;
+}
+
+.nav__brand {
+    width: 40%;
+    justify-content: center;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.nav__list {
+    width: 60%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav__link {
+    padding-left: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    text-shadow: 2px 2px 2px #ffffff;
+}
+
+.nav__link:hover {
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+}

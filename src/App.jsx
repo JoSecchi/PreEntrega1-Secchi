@@ -1,5 +1,6 @@
 
 import './App.css';
+import './globals/styles.css';
 import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
     <NavBar/>
-    <ItemListContainer texto="Bienvenido a mi tienda online"/>
+    <ItemListContainer texto="¡Welcome to our Store!"/>
     </>
   )
 }
