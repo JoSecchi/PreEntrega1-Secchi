@@ -1,0 +1,16 @@
+.CardItem {
+    width: 80%;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    margin: 1rem;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ItemImg {
+    max-width: 80%;
+    margin-top: 0.8rem;
+}

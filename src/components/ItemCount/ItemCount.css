@@ -1,0 +1,14 @@
+.Counter {
+    width: fit-content;
+    background-color: red;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 20%;
+}
+
+.Controls {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}

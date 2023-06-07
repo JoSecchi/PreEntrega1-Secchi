@@ -1,4 +1,5 @@
 import React from "react";
+import './ItemListContainer.css'
 import Title from "../Title";
 import { useState, useEffect } from "react";
 import { getProducts } from "../../itemsStock";
