@@ -2,36 +2,25 @@ import CartWidget from "../CartWidget";
 import '../../globals/styles.css';
 import './navBar.css';
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
+// import React from "react-bootstrap";
 
 const NavBar = () => {
     return (
-        <div className="container">
-            <nav className="nav">
-                <div className="nav__brand">
-                    <a href="#" className="nav__link">The Travel Gadget</a>
+            <nav className="NavBar">
+                <div className="NavBar__brand">
+                    <Link to='/' className='CategoryLink'>
+                        <h3>The Travel Gadget</h3>
+                    </Link>
                 </div>
-                <ul className="nav__list">
-                    <li>
-                        
-                        <a href="#" className="nav__link">Categories</a>
-                    </li>
-                    <li>
-                        <a href="#" className="nav__link">Pick up stores</a>
-                    </li>
-                    <li>
-                        <a href="#" className="nav__link">Our Team</a>
-                    </li>
-                    <li>
-                        <a href="#" className="nav__link">Log In</a>
-                    </li>
-                    <li>
-                        <a href="#" className="nav__link">
-                            <CartWidget/>
-                        </a>
-                    </li>
-                </ul>
+                <div className="Categories">
+                    <NavLink to={'/category/lugagge'} className='CategoryLink'>Luggage</NavLink>
+                    <NavLink to={'/category/accesories'} className='CategoryLink'>Accesories</NavLink>
+                    <NavLink to={'/category/clothing'} className='CategoryLink'>Clothing</NavLink>
+                    <CartWidget/>
+
+                </div>
             </nav>
-        </div>
     )
 }
 
